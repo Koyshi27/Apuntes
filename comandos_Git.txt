@@ -1,0 +1,3 @@
+A continuación se mostraran un listado de comandos Git basicos que podemos utilizar.
+- git init: Crea un repositorio para el proyecto con el cual podremos empezar a trabajar. Ademas, es un area en memoria RAM (staging).
+- git status: Nos dice cual es el estatus del proyecto.
