@@ -8,3 +8,5 @@ A continuación se mostraran un listado de comandos Git basicos que podemos util
 - git log: Nos permite ver el historial de commits que se han echo hasta la version mas actual.
 - git log --stat: Hace lo mismo que un git log normal, pero nos permite ver el cambio que se realizo.
 - git reset: Nos permite regresar a un commit anterior, existen dos tipos, el --hard y el --soft.
+
+- git checkout: El comando git checkout + ID del commit nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
