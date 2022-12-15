@@ -3,7 +3,7 @@ A continuación se mostraran un listado de comandos Git basicos que podemos util
 - git status: Nos dice cual es el estatus del proyecto.
 - git add: Agrega el archivo(s) a staging donde se guardara temporalmente antes de enviarlo al repositorio.
 - git commit -m: Se envia el archivo de stagin al repositorio principal. Se usa el -m para agregar un mensaje- git commi
-
+- git rm --cached: Nos permite regresar un archivo a estatus untrakeble.
 
 - git log: Nos permite ver el historial de commits que se han echo hasta la version mas actual.
 - git log --stat: Hace lo mismo que un git log normal, pero nos permite ver el cambio que se realizo.
