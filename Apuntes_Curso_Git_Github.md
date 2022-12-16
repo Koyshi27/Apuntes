@@ -106,15 +106,23 @@ Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debem
 ## ¿Cómo conectar un repositorio de GitHub a nuestro documento local?
 Si queremos conectar el repositorio de GitHub con nuestro repositorio local, que creamos usando el comando git init, debemos ejecutar las siguientes instrucciones:
 1. Guardar la URL del repositorio de GitHub con el nombre de origin.
-git remote add origin URL
+
+        git remote add origin URL
 
 2. Verificar que la URL se haya guardado correctamente:
-git remote
-git remote -v
+
+        git remote
+        git remote -v
 
 3. Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories:
-  git pull origin master --allow-unrelated-histories
+
+        git pull origin master --allow-unrelated-histories
   
 4. Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub:
-  git push origin master
+
+        git push origin master
+
+## **Ejemplo de una conexión al repositorio remoto.**
+
+![EjemploConexionARepoRemoto](EjemploConexionARepoRemoto.jpg)
  
