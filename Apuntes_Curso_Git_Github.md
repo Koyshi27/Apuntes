@@ -96,3 +96,25 @@ Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el fluj
 
 ## **¿Como hacer git Merge?**
 Para hacer merge, unicamente tenemos que colocarlos cobre la rama con HEAD y colocar el comando git merge nombre_rama.
+
+# **Uso de GitHub**
+GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva.
+
+## ¿Como clonar un repositorio?
+Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando HTTPS) y ejecutar el comando git clone + la URL que acabamos de copiar. Esto descargará la versión de nuestro proyecto que se encuentra en GitHub.
+
+## ¿Cómo conectar un repositorio de GitHub a nuestro documento local?
+Si queremos conectar el repositorio de GitHub con nuestro repositorio local, que creamos usando el comando git init, debemos ejecutar las siguientes instrucciones:
+1. Guardar la URL del repositorio de GitHub con el nombre de origin.
+git remote add origin URL
+
+2. Verificar que la URL se haya guardado correctamente:
+git remote
+git remote -v
+
+3. Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories:
+  git pull origin master --allow-unrelated-histories
+  
+4. Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub:
+  git push origin master
+ 
